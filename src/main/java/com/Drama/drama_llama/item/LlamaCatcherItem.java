@@ -1,4 +1,4 @@
-package com.Drama.drama_llama.item;
+package com.drama.drama_llama.item;
 
 import net.minecraft.world.item.Item;
 

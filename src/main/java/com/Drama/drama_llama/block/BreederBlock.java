@@ -1,4 +1,4 @@
-package com.Drama.drama_llama.block;
+package com.drama.drama_llama.block;
 
 import net.minecraft.world.level.block.Block;
 

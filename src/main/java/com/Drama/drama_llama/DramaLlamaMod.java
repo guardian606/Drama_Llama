@@ -1,8 +1,8 @@
-package com.Drama.drama_llama;
+package com.drama.drama_llama;
 
-import com.Drama.drama_llama.registry.ModBlocks;
-import com.Drama.drama_llama.registry.ModEntities;
-import com.Drama.drama_llama.registry.ModItems;
+import com.drama.drama_llama.registry.ModBlocks;
+import com.drama.drama_llama.registry.ModEntities;
+import com.drama.drama_llama.registry.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -15,9 +15,9 @@ public class DramaLlamaMod {
     public DramaLlamaMod() {
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
         
-        ModItems.register(bus);
-        ModBlocks.register(bus);
-        ModEntities.register(bus);
+        ModItems.ITEMS.register(bus);
+        ModBlocks.BLOCKS.register(bus);
+        ModEntities.ENTITIES.register(bus);
         
         bus.addListener(this::setup);
         bus.addListener(this::clientSetup);

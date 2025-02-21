@@ -1,4 +1,4 @@
-package com.Drama.drama_llama.registry;
+package com.drama.drama_llama.registry;
 
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -10,7 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, "dramallama");
 
-    public static void register() {
+    static {
         ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
