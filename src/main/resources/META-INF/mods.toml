@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="drama_llama"  # Change to match your mod's ID
+version="0.1"
+displayName="Drama Llama"
+credits="Inspired by the Chicken Mod and fluid cows!"
+authors="Guardian_606"
+description='''
+Adds resource-producing llamas to Minecraft.
+'''
